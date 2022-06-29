@@ -1,29 +1,35 @@
-# README #
+# Dingdongu Api Sample GQL Generator
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Usage
 
-### What is this repository for? ###
+### Command
+* 3rd argument must be ```endpoint url```
+* things behind url argument,
+  * output=```output-path```
+    * generate gql samples to under ```output-path```
+  * operation=```specific-operation```
+    * generate gql sample, only ```specific-operation```
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-### How do I get set up? ###
+### Examples
+#### Output ```all``` graphql api of endpoint to files in ```specific directory```
+* default directory is ```./result```
+``` bash
+npm run generate "http://dev-api-auth.dingdongu.com/v1/graphql" output=./results/auth
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+#### Output ```all``` graphql api of endpoint to ```console```
+* default directory is ```./result```
+``` bash
+npm run generate "http://dev-api-auth.dingdongu.com/v1/graphql" output=console
+```
 
-### Contribution guidelines ###
+#### Output ```specific``` graphql api of endpoint to ```default directory```
+``` bash
+npm run generate "http://dev-api-auth.dingdongu.com/v1/graphql" operation=signIn
+```
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+#### Output ```specific``` graphql api of endpoint to ```console```
+``` bash
+npm run generate "http://dev-api-auth.dingdongu.com/v1/graphql" operation=signIn output=console
+```
