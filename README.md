@@ -14,12 +14,14 @@
 ### Examples
 #### Output ```all``` graphql api of endpoint to files in ```specific directory```
 * default directory is ```./result```
+
 ``` bash
 npm run generate "http://dev-api-auth.dingdongu.com/v1/graphql" output=./results/auth
 ```
 
 #### Output ```all``` graphql api of endpoint to ```console```
 * default directory is ```./result```
+
 ``` bash
 npm run generate "http://dev-api-auth.dingdongu.com/v1/graphql" output=console
 ```
