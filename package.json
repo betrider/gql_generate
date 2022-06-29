@@ -1,0 +1,15 @@
+{
+  "name": "du-gql-sample-generator",
+  "author": "cookie",
+  "version": "0.0.1",
+  "description": "generate gql sample",
+  "main": "generate.js",
+  "dependencies": {
+    "sync-request": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "generate": "node generate.js"
+  },
+  "license": "ISC"
+}
