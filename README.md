@@ -16,22 +16,22 @@
 * default directory is ```./result```
 
 ``` bash
-npm run generate "http://dev-api-auth.dingdongu.com/v1/graphql" output=./results/auth
+npm run generate "https://dev-api-auth.dingdongu.com/v1/graphql" output=./results/auth
 ```
 
 #### Output ```all``` graphql api of endpoint to ```console```
 * default directory is ```./result```
 
 ``` bash
-npm run generate "http://dev-api-auth.dingdongu.com/v1/graphql" output=console
+npm run generate "https://dev-api-auth.dingdongu.com/v1/graphql" output=console
 ```
 
 #### Output ```specific``` graphql api of endpoint to ```default directory```
 ``` bash
-npm run generate "http://dev-api-auth.dingdongu.com/v1/graphql" operation=signIn
+npm run generate "https://dev-api-auth.dingdongu.com/v1/graphql" operation=signIn
 ```
 
 #### Output ```specific``` graphql api of endpoint to ```console```
 ``` bash
-npm run generate "http://dev-api-auth.dingdongu.com/v1/graphql" operation=signIn output=console
+npm run generate "https://dev-api-auth.dingdongu.com/v1/graphql" operation=signIn output=console
 ```
