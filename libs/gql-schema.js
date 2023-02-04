@@ -62,7 +62,7 @@ function getApiList(optype, schemaObjectsMap) {
   var apiObject = schemaObjectsMap[optype]
   var apiList = apiObject && apiObject.fields || []
   return apiList.map(item => {
-    var input = item.args[0] && item.args[0].type.ofType.name
+    var input = item.args[0] && item.args[0].type.ofType?.name
     var output = item.type.name || (item.type.ofType && item.type.ofType.name)
     var inputsAll = getInputTypeIncludeSubs(input, schemaObjectsMap)
     var outputsAll = getOutputTypeIncludeSubs(output, schemaObjectsMap)
