@@ -40,6 +40,11 @@ npm run generate "https://dev-api-auth.dingdongu.com/v1/graphql" operation=signI
 npm run generate "https://dev-api-auth.dingdongu.com/v1/graphql" template=dart-custom
 ```
 
+#### Output all graphql apis of endpoint to default directory by ```specific template```
+``` bash
+npm run generate "https://dev-api-auth.dingdongu.com/v1/graphql" template=inputs
+```
+
 
 ### Customize template
 * with javascript
