@@ -105,7 +105,7 @@ function getInputTypeIncludeSubsLoop(name, schemaObjectsMap, results) {
       description: field.description || '',
       type: type.name,
       kind: type.kind,
-      required: field.type.kind == 'NON_NULL',
+      required: field.type.kind == 'NON_NULL' ? 'true' : 'false',
       fields: name != type.name ? getInputTypeIncludeSubsLoop(type.name, schemaObjectsMap, results) : null,
     }
   })

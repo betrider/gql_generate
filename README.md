@@ -17,7 +17,7 @@
 ### Examples
 #### Output ```all``` graphql apis of endpoint to files in ```specific directory```
 ``` bash
-npm run generate "https://dev-api-auth.dingdongu.com/v1/graphql" output=./results/auth
+npm run generate "https://dev-api-postbox.dingdongu.com/user" output=./results/auth
 ```
 
 #### Output ```all``` graphql apis of endpoint to ```console```

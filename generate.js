@@ -14,6 +14,10 @@ const availableTemplates = {
     "dart-custom": {
         "template": require("./assets/dart-custom.js"),
         "extension": "dart"
+    },
+    "inputs": {
+        "template": require("./assets/inputs.js"),
+        "extension": "gql"
     }
 }
 const selectedTemplate = options["template"] && availableTemplates[options["template"]] || availableTemplates["gql"]
