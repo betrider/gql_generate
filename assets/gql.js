@@ -20,55 +20,53 @@ module.exports = root([
     ]),
   ]),
   cond(data => !data.isPrimitiveOutputType, [
-    "    ... on {{outputTypeName}} {",
     sub("outputTypeFields",
       [
-        "      {{name}}",
+        "    {{name}}",
         template("fields",
-          ["      {"], // head
+          ["    {"], // head
           [
-            "        {{name}}",
+            "      {{name}}",
             template("fields",
-              ["        {"], // head
+              ["      {"], // head
               [
-                "          {{name}}",
+                "        {{name}}",
                 template("fields",
-                  ["          {"], // head
+                  ["        {"], // head
                   [
-                    "            {{name}}",
+                    "          {{name}}",
                     template("fields",
-                      ["            {"], // head
+                      ["          {"], // head
                       [
-                        "              {{name}}",
+                        "            {{name}}",
                         template("fields",
-                          ["              {"], // head
+                          ["            {"], // head
                           [
-                            "                {{name}}",
+                            "              {{name}}",
                             template("fields",
-                              ["                {"], // head
+                              ["              {"], // head
                               [
-                                "                  {{name}}",
+                                "                {{name}}",
                               ],
-                              ["                }"] // tail
+                              ["              }"] // tail
                             ),
                           ],
-                          ["              }"] // tail
+                          ["            }"] // tail
                         ),
                       ],
-                      ["            }"] // tail
+                      ["          }"] // tail
                     ),
                   ],
-                  ["          }"] // tail
+                  ["        }"] // tail
                 ),
               ],
-              ["        }"] // tail
+              ["      }"] // tail
             ),
           ],
-          ["      }"] // tail
+          ["    }"] // tail
         ),
       ]
     ),
-    "    }",
     "  }",
   ]),
   "}",
